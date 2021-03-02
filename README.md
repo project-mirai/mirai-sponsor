@@ -8,4 +8,6 @@ mirai项目的赞助透明化，金额流向公示
 
 
 （请备注是否实名/匿名 以及信息）
+<br>
+
 <img src="https://i.loli.net/2021/03/02/rPqxpWmDwbnHdte.png" width="200" alt="Alipay">
