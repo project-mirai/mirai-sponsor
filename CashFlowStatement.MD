@@ -15,5 +15,5 @@
 | :-----    | :----           | ----: |:---- |----: |
 | 2021/02/27| <a href="https://github.com/mzdluo123">RainChan</a>| +32.50 | 赞助| +32.50|
 | 2021/02/27| <a href="https://github.com/mzdluo123">RainChan</a>| -32.50 | 论坛<a href="/data/Pay-Server-2-27-2021.jpg" alt="账单">服务器租借(12个月)</a>| +0.00|
-| 2021/03/02| <a alt="这是实名赞助" href="github.com/liujiahua123123">NaturalHG</a>| +648.00 | 赞助 | +648.00|
-| 2021/03/02| <a alt="这是实名赞助" href="github.com/dazecake">DazeCake</a>| +50.00 | 赞助 | +698.00|
+| 2021/03/02| <a alt="这是实名赞助" href="https://github.com/liujiahua123123">NaturalHG</a>| +648.00 | 赞助 | +648.00|
+| 2021/03/02| <a alt="这是实名赞助" href="https://github.com/dazecake">DazeCake</a>| +50.00 | 赞助 | +698.00|
