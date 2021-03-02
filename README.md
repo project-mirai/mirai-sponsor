@@ -7,4 +7,4 @@ mirai项目的赞助透明化，金额流向公示
 - 赞助支持实名/匿名，方式暂定仅支持微信/支付宝。
 
 
-![image.png](https://i.loli.net/2021/03/02/rPqxpWmDwbnHdte.png)
+<img src="https://i.loli.net/2021/03/02/rPqxpWmDwbnHdte.png" style="width: 50hw">
