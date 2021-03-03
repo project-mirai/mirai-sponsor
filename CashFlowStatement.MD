@@ -1,4 +1,4 @@
-### Net Cash(Current Cash): ¥698
+### Net Cash(Current Cash): ¥716.93
 
  <ul>
   <li>
