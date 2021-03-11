@@ -1,4 +1,4 @@
-### Net Cash(Current Cash): ¥776.88
+### Net Cash(Current Cash): ¥1026.88
 
  <ul>
   <li>
@@ -21,3 +21,5 @@
 | 2021/03/03| <a alt="这是实名赞助" href="https://github.com/aimerneige">Aimer Neige</a>| +12.93 | 赞助 | +716.93 |
 | 2021/03/04| <a alt="这是实名赞助[原先为匿名赞助: 臭保底人" href="https://github.com/endymx" >endymx</a>| +49.95 | 赞助 | +766.88 |
 | 2021/03/04| <a alt="不知道是不是匿名" >星夜</a>| +10.00| 赞助 | +776.88 |
+| 2021/03/10| <a alt="不知道是不是匿名" >**航</a>| +200.00| 赞助 | +976.88 |
+| 2021/03/11| <a alt="这是实名赞助" href="https://github.com/liyinkan" >liyinkan</a>| +50.00| 赞助 | +1026.88 |
