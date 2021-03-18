@@ -11,6 +11,6 @@
 
 - 查看金额记录: [CashFlowStatement.MD][CashFlowStatement]
 - 进行赞助:  
-  感谢你的支持。请备注实名或匿名，实名时请提供你的个人或团队主页地址（将会公开显示在[金额记录][CashFlowStatement]中）。
+  感谢你的支持。请备注实名或匿名，实名时可以提供你的个人或团队主页地址（将会公开显示在[金额记录][CashFlowStatement]中）或只展示网络昵称。
 
   <img src="https://i.loli.net/2021/03/02/rPqxpWmDwbnHdte.png" width="200" alt="Alipay">
