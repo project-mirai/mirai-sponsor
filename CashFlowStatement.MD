@@ -1,4 +1,4 @@
-### Net Cash(Current Cash): ¥1026.88
+### Net Cash(Current Cash): ¥4804.69
 
  <ul>
   <li>
@@ -24,3 +24,4 @@
 | 2021/03/10| <a alt="不知道是不是匿名" >**航</a>| +200.00| 赞助 | +976.88 |
 | 2021/03/11| <a alt="这是实名赞助" href="https://github.com/liyinkan" >liyinkan</a>| +50.00| 赞助 | +1026.88 |
 | 2021/03/13| <a alt="这是实名赞助" href="https://qianyiyi.cf-lol.com" >千以亦</a>| +100.00| 赞助 | +1126.88 |
+| 2021/03/18| <a alt="这是实名赞助" href="https://github.com/StageGuard" >StageGuard</a>| +3677.81| 赞助 | +4804.69 |
