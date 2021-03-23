@@ -1,4 +1,4 @@
-### Net Cash(Current Cash): ¥+4804.69
+### Net Cash(Current Cash): ¥+4874.69
 
  <ul>
   <li>
