@@ -10,6 +10,7 @@
 [CashFlowStatement]: CashFlowStatement.MD
 
 - 查看金额记录: [CashFlowStatement.MD][CashFlowStatement]
+- 我们<b>不推荐也不建议</b>使用任何借贷方式进行赞助，如支付宝花呗
 - 进行赞助:  
   感谢你的支持。请备注实名或匿名，实名时可以提供你的个人或团队主页地址（将会公开显示在[金额记录][CashFlowStatement]中）或只展示网络昵称。
 
