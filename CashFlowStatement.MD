@@ -27,3 +27,5 @@
 | 2021/03/18| <a alt="这是实名赞助" href="https://github.com/StageGuard" >StageGuard</a>| +3677.81| 赞助 | +4804.69 |
 | 2021/03/22| <a alt="这是实名赞助" href="https://github.com/missile-xuan" >missile-xuan</a>| +50.00| 赞助 | +4854.69 |
 | 2021/03/22| <a alt="这是实名赞助" href="https://github.com/LingMuXing" >LingMuXing</a>| +20.00| 赞助 | +4874.69 |
+| 2021/03/22| <a alt="这是实名赞助" href="https://github.com/HoshinoTented" >七色</a>| +6.66| 赞助 | +4881.35 |
+| 2021/03/22| <a alt="这是匿名赞助" >匿名</a>| +666.00| 赞助 | +5547.35 |
