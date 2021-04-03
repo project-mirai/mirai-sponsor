@@ -157,23 +157,4 @@ fun List<Statement>.computeCashFlow(initialCurrentCash:Long = 0L):CashFlowStatem
 }
 
 
-fun main(){
-    val item = listOf (
-        Statement(
-            System.currentTimeMillis(), -19300, Operator("Him188", "https://github.com/him188"), mapOf(
-                StatementAttribute.REMARK to "打游戏",
-                StatementAttribute.PROVE_NAME to "截图",
-                StatementAttribute.PROVE_LINK to "https://a/b.jpg"
-            )
-        ),
-        Statement(
-            System.currentTimeMillis() - 1000000000000, -19300, Operator("Him288", "https://github.com/him188"), mapOf(
-                StatementAttribute.REMARK to "打游戏",
-            )
-        )
-    )
-
-    println(item.computeCashFlow().statement)
-}
-
 
