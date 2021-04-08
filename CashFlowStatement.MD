@@ -29,3 +29,5 @@
 | 2021/03/22| <a alt="这是实名赞助" href="https://github.com/LingMuXing" >LingMuXing</a>| +20.00| 赞助 | +4874.69 |
 | 2021/03/23| <a alt="这是实名赞助" href="https://github.com/HoshinoTented" >七色</a>| +6.66| 赞助 | +4881.35 |
 | 2021/03/28| <a alt="这是匿名赞助" >匿名</a>| +666.00| 赞助 | +5547.35 |
+
+> 记录系统正在优化，表格可能不会及时更新
