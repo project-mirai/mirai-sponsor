@@ -14,7 +14,9 @@ fun saveTransactions(transaction: List<Transaction>) = File(CASH_FLOW_JSON).writ
 
 fun List<Transaction>.save() = saveTransactions(this)
 
-fun CashFlowStatement.save() = File(CASH_FLOW_MD).writeText(this.statement.toString())
+fun CashFlowStatement.save() = saveTo(File(CASH_FLOW_MD))
+
+fun CashFlowStatement.saveTo(target:File) = target.writeText(this.statement.toString())
 
 val Json = Json {
     this.ignoreUnknownKeys = true
@@ -23,6 +25,9 @@ val Json = Json {
 }
 
 inline fun <reified T : Any> File.deserialize(defaultCreator:() -> T): T{
+    if(!this.exists()){
+        return defaultCreator()
+    }
     val text = this.readText()
     if(text.isEmpty()){
         return defaultCreator()
@@ -42,3 +47,4 @@ inline fun <reified T:Any> File.writeData(data: T){
 inline fun <reified T : Any> T.serialize(format: StringFormat, serializer: KSerializer<T> = format.serializersModule.serializer()): String {
     return format.encodeToString(serializer, this)
 }
+

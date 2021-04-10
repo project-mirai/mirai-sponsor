@@ -17,21 +17,15 @@ data class Transaction(
     val timestamp: Long,
     val amount: Long,      //The amount of money, example: ¥39.39 = 3939L
     val operator: Operator,
-    val attributes: Map<StatementAttribute,String>,//attributes of this statement
-):Comparable<Transaction>{
-    //natural order: old to new
-    //Note that different objects might return 0
-    override fun compareTo(other: Transaction): Int {
-        return (other.timestamp - this.timestamp).toInt()
-    }
-}
+    val attributes: Map<TransactionAttribute,String>,//attributes of this statement
+)
 
 @Serializable
-enum class StatementAttribute(
-){
+enum class TransactionAttribute(
+) {
     REMARK,
-    PROVE_LINK,
-    PROVE_NAME
+    PROOF_LINK,
+    PROOF_CAPTION
 }
 
 
@@ -134,12 +128,12 @@ private fun CashFlowStatementBuilder.compute(transaction: Transaction){
         append(" | ")
         append(transaction.amount.formatMoney())
         append(" | ")
-        append(transaction.attributes[StatementAttribute.REMARK]?:"none")
+        append(transaction.attributes[TransactionAttribute.REMARK]?:"none")
 
-        val prove = transaction.attributes[StatementAttribute.PROVE_NAME]
+        val prove = transaction.attributes[TransactionAttribute.PROOF_CAPTION]
         if(prove != null){
             append("<a href=\"")
-            append(transaction.attributes[StatementAttribute.PROVE_LINK]?:"#")
+            append(transaction.attributes[TransactionAttribute.PROOF_LINK]?:"#")
             append("\">(")
             append(prove)
             append(")</a>")
@@ -155,7 +149,7 @@ private fun CashFlowStatementBuilder.compute(transaction: Transaction){
 fun List<Transaction>.computeCashFlow(initialCurrentCash:Long = 0L):CashFlowStatement{
     return CashFlowStatementBuilder().also{builder ->
         builder.currentCash = initialCurrentCash
-        this.sorted().forEach {
+        this.sortedBy { it.timestamp }.forEach {
             builder.compute(it)
         }
 
