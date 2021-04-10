@@ -1,9 +1,7 @@
 import kotlinx.serialization.Serializable
-import java.awt.CardLayout
 import java.lang.IllegalArgumentException
 import java.lang.StringBuilder
 import java.text.SimpleDateFormat
-import java.time.ZoneId
 import java.util.*
 import kotlin.math.absoluteValue
 
@@ -55,7 +53,10 @@ fun Operator.toTag():String{
     }
 }
 
-fun Long.interpretAsMoney():String{
+/**
+ * Convert Money in Long to Human Readable Language
+ */
+fun Long.formatMoney():String{
     val long = this
     return buildString {
         //add correspond colors later ;)
@@ -131,7 +132,7 @@ private fun CashFlowStatementBuilder.compute(transaction: Transaction){
         append(" | ")
         append(transaction.operator.toTag())
         append(" | ")
-        append(transaction.amount.interpretAsMoney())
+        append(transaction.amount.formatMoney())
         append(" | ")
         append(transaction.attributes[StatementAttribute.REMARK]?:"none")
 
@@ -144,7 +145,7 @@ private fun CashFlowStatementBuilder.compute(transaction: Transaction){
             append(")</a>")
         }
         append(" | ")
-        append(currentCash.interpretAsMoney())
+        append(currentCash.formatMoney())
         append(" | ")
         appendLine()
     }
@@ -161,7 +162,7 @@ fun List<Transaction>.computeCashFlow(initialCurrentCash:Long = 0L):CashFlowStat
         val lastUpdate = simpleDateFormat().format(System.currentTimeMillis())
 
         builder.statement.insert(0,HEAD_TEMPLATE
-            .replace("{currentCash}",builder.currentCash.interpretAsMoney())
+            .replace("{currentCash}",builder.currentCash.formatMoney())
             .replace("{lastUpdate}",lastUpdate))
     }
 }
