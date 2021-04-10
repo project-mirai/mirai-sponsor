@@ -12,15 +12,15 @@ data class Operator(
 )
 
 @Serializable
-data class Statement(
+data class Transaction(
     val timestamp: Long,
     val amount: Long,      //The amount of money, example: ¥39.39 = 3939L
     val operator: Operator,
     val attributes: Map<StatementAttribute,String>,//attributes of this statement
-):Comparable<Statement>{
+):Comparable<Transaction>{
     //natural order: old to new
     //Note that different objects might return 0
-    override fun compareTo(other: Statement): Int {
+    override fun compareTo(other: Transaction): Int {
         return (other.timestamp - this.timestamp).toInt()
     }
 }
@@ -83,6 +83,7 @@ fun Long.interpretAsMoney():String{
     }
 }
 
+
 interface CashFlowStatement{
     val currentCash:Long
     val statement:CharSequence
@@ -112,23 +113,23 @@ const val HEAD_TEMPLATE = """
 | :-----    | :----           | ----: |:---- |----: |
 """
 
-private fun CashFlowStatementBuilder.compute(statement: Statement){
-    currentCash+=statement.amount
+private fun CashFlowStatementBuilder.compute(transaction: Transaction){
+    currentCash+=transaction.amount
     with(this.statement){
         append("| ")
         val simpleDateFormat = SimpleDateFormat(DATE_FORMAT)
-        append(simpleDateFormat.format(statement.timestamp))
+        append(simpleDateFormat.format(transaction.timestamp))
         append(" | ")
-        append(statement.operator.toTag())
+        append(transaction.operator.toTag())
         append(" | ")
-        append(statement.amount.interpretAsMoney())
+        append(transaction.amount.interpretAsMoney())
         append(" | ")
-        append(statement.attributes[StatementAttribute.REMARK]?:"none")
+        append(transaction.attributes[StatementAttribute.REMARK]?:"none")
 
-        val prove = statement.attributes[StatementAttribute.PROVE_NAME]
+        val prove = transaction.attributes[StatementAttribute.PROVE_NAME]
         if(prove != null){
             append("<a href=\"")
-            append(statement.attributes[StatementAttribute.PROVE_LINK]?:"#")
+            append(transaction.attributes[StatementAttribute.PROVE_LINK]?:"#")
             append("\">(")
             append(prove)
             append(")</a>")
@@ -141,7 +142,7 @@ private fun CashFlowStatementBuilder.compute(statement: Statement){
 }
 
 
-fun List<Statement>.computeCashFlow(initialCurrentCash:Long = 0L):CashFlowStatement{
+fun List<Transaction>.computeCashFlow(initialCurrentCash:Long = 0L):CashFlowStatement{
     return CashFlowStatementBuilder().also{builder ->
         builder.currentCash = initialCurrentCash
         this.sorted().forEach {
