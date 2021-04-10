@@ -19,6 +19,7 @@ data class Statement(
     val attributes: Map<StatementAttribute,String>,//attributes of this statement
 ):Comparable<Statement>{
     //natural order: old to new
+    //Note that different objects might return 0
     override fun compareTo(other: Statement): Int {
         return (other.timestamp - this.timestamp).toInt()
     }
@@ -31,9 +32,6 @@ enum class StatementAttribute(
     PROVE_LINK,
     PROVE_NAME
 }
-
-
-
 
 
 fun Operator.toTag():String{
@@ -53,7 +51,6 @@ fun Operator.toTag():String{
         append("</a>")
     }
 }
-
 
 fun Long.interpretAsMoney():String{
     val long = this
@@ -85,8 +82,6 @@ fun Long.interpretAsMoney():String{
         }
     }
 }
-
-
 
 interface CashFlowStatement{
     val currentCash:Long
