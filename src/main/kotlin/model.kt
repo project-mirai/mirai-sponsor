@@ -1,7 +1,10 @@
 import kotlinx.serialization.Serializable
+import java.awt.CardLayout
 import java.lang.IllegalArgumentException
 import java.lang.StringBuilder
 import java.text.SimpleDateFormat
+import java.time.ZoneId
+import java.util.*
 import kotlin.math.absoluteValue
 
 
@@ -95,8 +98,14 @@ private class CashFlowStatementBuilder:CashFlowStatement{
 }
 
 const val DATE_FORMAT = "yyyy/MM/dd"
+fun simpleDateFormat():SimpleDateFormat =  SimpleDateFormat(DATE_FORMAT).apply {
+    timeZone = TimeZone.getTimeZone("Asia/Shanghai")
+}
+
+
 const val HEAD_TEMPLATE = """
 ### Net Cash(Current Cash): ¥{currentCash}
+### Last Update: {lastUpdate} (UTC+8)
 
  <ul>
   <li>
@@ -117,7 +126,7 @@ private fun CashFlowStatementBuilder.compute(transaction: Transaction){
     currentCash+=transaction.amount
     with(this.statement){
         append("| ")
-        val simpleDateFormat = SimpleDateFormat(DATE_FORMAT)
+        val simpleDateFormat = simpleDateFormat()
         append(simpleDateFormat.format(transaction.timestamp))
         append(" | ")
         append(transaction.operator.toTag())
@@ -148,7 +157,12 @@ fun List<Transaction>.computeCashFlow(initialCurrentCash:Long = 0L):CashFlowStat
         this.sorted().forEach {
             builder.compute(it)
         }
-        builder.statement.insert(0,HEAD_TEMPLATE.replace("{currentCash}",builder.currentCash.interpretAsMoney()))
+
+        val lastUpdate = simpleDateFormat().format(System.currentTimeMillis())
+
+        builder.statement.insert(0,HEAD_TEMPLATE
+            .replace("{currentCash}",builder.currentCash.interpretAsMoney())
+            .replace("{lastUpdate}",lastUpdate))
     }
 }
 
