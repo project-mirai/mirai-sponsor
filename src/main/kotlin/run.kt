@@ -34,6 +34,11 @@ class TransactionBuilder{
         this.amount = amount
     }
 
+    fun sponsor(amount:Long){
+        this.amount = amount
+        this.remark = "赞助"
+    }
+
     fun outcome(amount:Long){
         this.amount = -amount
     }
