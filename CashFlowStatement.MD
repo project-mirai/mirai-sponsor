@@ -1,5 +1,5 @@
 
-### Net Cash(Current Cash): ¥+5787.51
+### Net Cash(Current Cash): ¥+5338.51
 ### Last Update: 2021/04/10 (UTC+8)
 
  <ul>
@@ -34,6 +34,8 @@
 | 2021/03/28 | <a anonymous>匿名</a> | +666.00 | 赞助 | +5562.35 | 
 | 2021/04/01 | <a href="https://github.com/Drincann">高厉害</a> | +10.00 | 赞助 | +5572.35 | 
 | 2021/04/02 | <a href="https://github.com/BlueSkyClouds">BlueSkyClouds</a> | +6.66 | 赞助 | +5579.01 | 
-| 2021/04/04 | <a anonymous>七色给粉色的晚餐</a> | +8.50 | 赞助 | +5587.51 | 
-| 2021/04/04 | <a anonymous>实名</a> | +100.00 | 赞助 | +5687.51 | 
-| 2021/04/06 | <a href="https://jgchat.net/">井盖chat</a> | +100.00 | 赞助 | +5787.51 | 
+| 2021/04/03 | <a href="https://github.com/liujiahua123123">NaturalHG</a> | -425.00 | mamoe.net域名续费-5年 | +5154.01 | 
+| 2021/04/04 | <a anonymous>七色给粉色的晚餐</a> | +8.50 | 赞助 | +5162.51 | 
+| 2021/04/04 | <a anonymous>实名</a> | +100.00 | 赞助 | +5262.51 | 
+| 2021/04/06 | <a href="https://jgchat.net/">井盖chat</a> | +100.00 | 赞助 | +5362.51 | 
+| 2021/04/07 | <a href="https://github.com/mzdluo123">RainChan</a> | -24.00 | PluginCenter测试服务器 | +5338.51 | 
