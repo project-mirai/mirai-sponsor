@@ -1,5 +1,5 @@
 
-### Net Cash(Current Cash): ¥+5562.35
+### Net Cash(Current Cash): ¥+5787.51
 ### Last Update: 2021/04/10 (UTC+8)
 
  <ul>
@@ -32,3 +32,8 @@
 | 2021/03/22 | <a href="https://github.com/LingMuXing">LingMuXing</a> | +20.00 | 赞助 | +4889.69 | 
 | 2021/03/23 | <a href="https://github.com/HoshinoTented">七色</a> | +6.66 | 赞助 | +4896.35 | 
 | 2021/03/28 | <a anonymous>匿名</a> | +666.00 | 赞助 | +5562.35 | 
+| 2021/04/01 | <a href="https://github.com/Drincann">高厉害</a> | +10.00 | 赞助 | +5572.35 | 
+| 2021/04/02 | <a href="https://github.com/BlueSkyClouds">BlueSkyClouds</a> | +6.66 | 赞助 | +5579.01 | 
+| 2021/04/04 | <a anonymous>七色给粉色的晚餐</a> | +8.50 | 赞助 | +5587.51 | 
+| 2021/04/04 | <a anonymous>实名</a> | +100.00 | 赞助 | +5687.51 | 
+| 2021/04/06 | <a href="https://jgchat.net/">井盖chat</a> | +100.00 | 赞助 | +5787.51 | 
