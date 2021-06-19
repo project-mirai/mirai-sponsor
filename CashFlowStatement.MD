@@ -1,6 +1,6 @@
 
-### Net Cash(Current Cash): ¥+5363.51
-### Last Update: 2021/04/15 (UTC+8)
+### Net Cash(Current Cash): ¥+5363.36
+### Last Update: 2021/06/19 (UTC+8)
 
  <ul>
   <li>
@@ -41,3 +41,4 @@
 | 2021/04/07 | <a href="https://github.com/mzdluo123">RainChan</a> | -24.00 | PluginCenter生产服务器 | +5338.51 | 
 | 2021/04/14 | <a href="https://enkansakura.top">落子</a> | +20.00 | 赞助 | +5358.51 | 
 | 2021/04/15 | <a anonymous>**龙</a> | +5.00 | 赞助 | +5363.51 | 
+| 2021/06/19 | <a href="">七色</a> | -0.15 | 社区活动经费 | +5363.36 | 
