@@ -145,7 +145,6 @@ private fun CashFlowStatementBuilder.compute(transaction: Transaction){
     }
 }
 
-
 fun List<Transaction>.computeCashFlow(initialCurrentCash:Long = 0L):CashFlowStatement{
     return CashFlowStatementBuilder().also{builder ->
         builder.currentCash = initialCurrentCash
@@ -160,6 +159,8 @@ fun List<Transaction>.computeCashFlow(initialCurrentCash:Long = 0L):CashFlowStat
             .replace("{lastUpdate}",lastUpdate))
     }
 }
+
+
 
 
 
