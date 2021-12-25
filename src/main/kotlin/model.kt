@@ -87,7 +87,7 @@ interface CashFlowStatement{
     val statement:CharSequence
 }
 
-private class CashFlowStatementBuilder:CashFlowStatement{
+internal class CashFlowStatementBuilder:CashFlowStatement{
     override var currentCash = 0L
     override val statement = StringBuilder()
 }
@@ -117,7 +117,7 @@ const val HEAD_TEMPLATE = """
 | :-----    | :----           | ----: |:---- |----: |
 """
 
-private fun CashFlowStatementBuilder.compute(transaction: Transaction){
+internal fun CashFlowStatementBuilder.compute(transaction: Transaction){
     currentCash+=transaction.amount
     with(this.statement){
         append("| ")

@@ -1,4 +1,6 @@
 import java.io.File
+import java.text.SimpleDateFormat
+import java.util.*
 
 //demo
 fun main(){
@@ -26,6 +28,10 @@ class TransactionBuilder{
 
     fun yesterday(){
         timeStamp = System.currentTimeMillis() - 24*60*60*1000
+    }
+
+    fun dayOf(year: Int, month:Int, day:Int){
+        timeStamp = simpleDateFormat().parse("${year}/${month}/${day}").time
     }
 
     var amount:Long? = null
