@@ -1,6 +1,6 @@
 
-### Net Cash(Current Cash): ¥+5743.33
-### Last Update: 2021/12/25 (UTC+8)
+### Net Cash(Current Cash): ¥+5412.13
+### Last Update: 2022/06/23 (UTC+8)
 
  <ul>
   <li>
@@ -55,3 +55,5 @@
 | 2021/12/15 | <a anonymous>mua病娇</a> | +5.20 | 赞助 | +5626.67 | 
 | 2021/12/16 | <a href="http://2048.top">CopyZ</a> | +66.66 | 赞助 | +5693.33 | 
 | 2021/12/17 | <a anonymous>**飞</a> | +50.00 | 赞助 | +5743.33 | 
+| 2022/06/23 | <a href="">RainChan</a> | -187.20 | 服务器续费 | +5556.13 | 
+| 2022/06/23 | <a href="">RainChan</a> | -144.00 | 服务器续费 | +5412.13 | 

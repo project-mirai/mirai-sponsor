@@ -2,19 +2,20 @@
 
 name: update
 
+
 # Controls when the workflow will run
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
       MIRAI_COST:
-          type: environment
+          type: string
       MIRAI_OP_NAME:
-          type: environment
+          type: string
       MIRAI_OP_LINK:
-          type: environment
+          type: string
       REMARK:
-          type: environment
+          type: string
       
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -33,13 +34,19 @@ jobs:
         with:
           # The Java version to set up. Takes a whole or semver Java version. See examples of supported syntax in README file
           java-version: 11
+          distribution: 'zulu' 
       - name: generate
+        env:
+          MIRAI_COST: ${{ inputs.MIRAI_COST }}
+          MIRAI_OP_NAME: ${{ inputs.MIRAI_OP_NAME }}
+          MIRAI_OP_LINK: ${{ inputs.MIRAI_OP_LINK }}
+          REMARK: ${{ inputs.REMARK }}
         run: ./gradlew run
       - name: commit to git
         run: |
             git config --global user.name "github-actions[bot]"
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git add -A
+            git add CashFlow.json CashFlowStatement.MD
             git commit -m "Update log"
             git push
       
