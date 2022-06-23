@@ -8,6 +8,7 @@ repositories {
 }
 
 plugins {
+    application
     kotlin("jvm") version "1.4.30"
     kotlin("plugin.serialization") version "1.4.30"
 }
@@ -16,6 +17,11 @@ fun kotlinx(id: String, version: String) = "org.jetbrains.kotlinx:kotlinx-$id:$v
 
 group = "net.mamoe"
 version = "1.0-SNAPSHOT"
+
+
+application{
+    mainClass.set("RunKt")
+}
 
 repositories {
     mavenCentral()
