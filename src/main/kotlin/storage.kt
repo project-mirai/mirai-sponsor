@@ -5,7 +5,7 @@ import java.io.File
 val FILE_BASE = System.getProperty("user.dir") + "/"
 
 val CASH_FLOW_JSON = FILE_BASE + "CashFlow.json"
-val CASH_FLOW_MD = FILE_BASE + "CashFlowStatement.md"
+val CASH_FLOW_MD = FILE_BASE + "CashFlowStatement.MD"
 
 
 fun loadTransactions():MutableList<Transaction> = File(CASH_FLOW_JSON).deserializeList()
