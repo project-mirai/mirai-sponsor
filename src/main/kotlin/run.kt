@@ -31,7 +31,7 @@ fun add_trans() {
     val env_map = System.getenv()
     val cost = env_map["MIRAI_COST"]
     val op_name = env_map["MIRAI_OP_NAME"]
-    val op_link = env_map[""]
+    val op_link = env_map["MIRAI_OP_LINK"]
     val env_remark = env_map["REMARK"]
     if (cost == null || op_name == null || env_remark == null) {
         throw IllegalArgumentException("参数无效")
