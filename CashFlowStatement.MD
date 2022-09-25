@@ -1,6 +1,6 @@
 
 ### Net Cash(Current Cash): ¥+4623.68
-### Last Update: 2022/06/23 (UTC+8)
+### Last Update: 2022/09/25 (UTC+8)
 
  <ul>
   <li>
