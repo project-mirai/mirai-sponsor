@@ -1,6 +1,4 @@
-import java.io.File
-import java.text.SimpleDateFormat
-import java.util.*
+import kotlin.math.cos
 
 //demo
 //fun main(){
@@ -19,14 +17,11 @@ import java.util.*
 
 
 fun main() {
-    try {
-        add_trans()
-    }catch (e:IllegalArgumentException){
-        println("未设置环境变量，跳过添加新记录")
-    }
+    add_trans()
     build()
 }
 
+val ALLOWED_PRINT_ENV = arrayOf("MIRAI_COST", "MIRAI_OP_NAME", "MIRAI_OP_LINK", "REMARK")
 fun add_trans() {
     val env_map = System.getenv()
     val cost = env_map["MIRAI_COST"]
@@ -34,18 +29,28 @@ fun add_trans() {
     val op_link = env_map["MIRAI_OP_LINK"]
     val env_remark = env_map["REMARK"]
     if (cost == null || op_name == null || env_remark == null) {
-        throw IllegalArgumentException("参数无效")
+        println("参数不足，跳过添加新记录")
+        env_map.asSequence().filter { i -> i.key in ALLOWED_PRINT_ENV }.forEach { i ->
+            println("${i.key} : ${i.value}")
+        }
+        return
     }
     val transactions = loadTransactions()
+    val count =( cost.toFloat() * 100 ).toLong() // 钱很少应该不会有多少误差
     transactions.add(buildTransaction {
         now()
-        cost(cost.toLong())
-        operator = Operator(op_name, op_link)
+        income(count)
+        operator = if (op_link.isNullOrEmpty()) {
+            Operator(op_name, null)
+        } else {
+            Operator(op_name, op_link)
+        }
         remark = env_remark
     })
     transactions.save()
 }
-fun build(){
+
+fun build() {
     val transactions = loadTransactions()
     transactions.computeCashFlow().save()
 }
