@@ -1,6 +1,6 @@
 
-### Net Cash(Current Cash): ¥+4628.73
-### Last Update: 2022/09/26 (UTC+8)
+### Net Cash(Current Cash): ¥+7628.73
+### Last Update: 2022/10/20 (UTC+8)
 
  <ul>
   <li>
@@ -65,3 +65,4 @@
 | 2022/09/26 | <a anonymous>**博</a> | +0.01 | 赞助 | +4623.70 | 
 | 2022/09/26 | <a anonymous>**博</a> | +0.03 | 赞助 | +4623.73 | 
 | 2022/09/26 | <a anonymous>**军</a> | +5.00 | 赞助 | +4628.73 | 
+| 2022/10/20 | <a href="https://github.com/w4123">溯洄</a> | +3000.00 | 赞助 | +7628.73 | 
