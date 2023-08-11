@@ -67,4 +67,4 @@
 | 2022/09/26 | <a anonymous>**军</a> | +5.00 | 赞助 | +4628.73 | 
 | 2022/10/20 | <a href="https://github.com/w4123">溯洄</a> | +3000.00 | 赞助 | +7628.73 | 
 | 2022/12/20 | <a anonymous>匿名</a> | +16.00 | 赞助 | +7644.73 | 
-| 2023/08/11 | <a href="https://github.com/RockChinQ">RockChinQ</a> | +500.00 |  | +8144.73 | 
+| 2023/08/11 | <a href="https://github.com/RockChinQ">RockChinQ</a> | +500.00 | 赞助 | +8144.73 | 
